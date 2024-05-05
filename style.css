@@ -68,10 +68,10 @@ body {
    text-align: center;
    transition: all ease-in-out 0.3s;
 }
-.profile__link:is(:link, :visited) {
+.profile__link:is(:link, :visited, :focus) {
    color: hsl(0, 0%, 100%);
 }
-.profile__link:hover {
+.profile__link:active {
    background-color: hsl(75, 94%, 57%);
    color: hsl(0, 0%, 12%);
 }
@@ -80,7 +80,13 @@ body {
    font-size: 11px;
    text-align: center;
 }
-
 .attribution a {
    color: hsl(228, 45%, 44%);
+}
+@media (any-hover: hover) {
+   .profile__link:hover {
+      cursor: pointer;
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 12%);
+   }
 }
