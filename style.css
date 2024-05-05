@@ -1,0 +1,86 @@
+@font-face {
+   font-family: "Inter";
+   src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: hsl(0, 0%, 8%);
+   font-family: "Inter", sans-serif;
+   color: hsl(0, 0%, 100%);
+   font-size: 14px;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.profile {
+   background-color: hsl(0, 0%, 12%);
+   border-radius: 12px;
+   max-width: 384px;
+   width: 90%;
+   padding: 32px;
+}
+.profile__figure {
+   margin-bottom: 12px;
+}
+.profile__img {
+   display: block;
+   max-width: 88px;
+   margin: 0 auto;
+   border-radius: 50%;
+}
+.profile__name {
+   font-size: 24px;
+   font-weight: 600;
+   text-align: center;
+   padding: 12px;
+}
+.profile__location {
+   font-size: 14px;
+   font-weight: 700;
+   text-align: center;
+   color: hsl(75, 94%, 57%);
+   margin-bottom: 24px;
+}
+.profile__bio {
+   font-size: 14px;
+   font-weight: 400;
+   text-align: center;
+   margin-bottom: 24px;
+}
+.profile__links {
+   display: grid;
+   gap: 16px;
+   color: hsl(0, 0%, 100%);
+   font-size: 14px;
+   font-weight: 700;
+}
+.profile__link {
+   text-decoration: none;
+   background-color: hsl(0, 0%, 20%);
+   border-radius: 8px;
+   padding: 12px;
+   text-align: center;
+   transition: all ease-in-out 0.3s;
+}
+.profile__link:is(:link, :visited) {
+   color: hsl(0, 0%, 100%);
+}
+.profile__link:hover {
+   background-color: hsl(75, 94%, 57%);
+   color: hsl(0, 0%, 12%);
+}
+.attribution {
+   margin-top: 24px;
+   font-size: 11px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
